@@ -5,7 +5,7 @@ const kelvinEl = document.getElementById("kelvin")
 function computeTemp(event){
     const currentValue = +event.target.value
 
-    switch (event.target.nae) {
+    switch (event.target.name) {
         case "celsius":
             kelvinEl.value = (currentValue + 273.32).toFixed(2);
             fahrenheitEl.value = (currentValue * 1.8 + 32).toFixed(2);
@@ -16,7 +16,7 @@ function computeTemp(event){
          break;
          case "kelvin":
             celsiusEl.value = (currentValue - 273.32).toFixed(2);
-            fahrenheitEl.value = ((value - 273.32) *1.8 + 32).toFixed(2);
+            fahrenheitEl.value = ((currentValuevalue - 273.32) *1.8 + 32).toFixed(2);
             break;
         default:
             break;
